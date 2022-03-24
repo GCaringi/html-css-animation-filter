@@ -162,7 +162,6 @@
     text-decoration: none;
 }
 
-
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -171,6 +170,45 @@
     width: 60px;
     height: 20px;
 }
+
+
+@keyframes top-rotate{
+    0%{
+        left:10%;
+    }
+    50%{
+        left:calc(90% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes bottom-rotate {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right:calc(90% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: top-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;

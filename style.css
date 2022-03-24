@@ -100,13 +100,13 @@
 
 .ex-10-icon {
     font-size: 60px;
-    animation: rotat;
+    animation: rotate;
     animation-timing-function: linear;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
-@keyframes rotat{
+@keyframes rotate{
     0%{
         transform: rotate(0deg);
     }
@@ -126,7 +126,28 @@
 
 .ex-11-icon {
     font-size: 60px;
+    
 }
+
+.ex-11-icon:hover{
+    animation: semi-rotate;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes semi-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(-0deg);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -140,6 +161,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;

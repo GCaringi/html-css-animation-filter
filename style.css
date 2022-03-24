@@ -88,6 +88,14 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 3s, width 3s, border-radius 3s, margin 3s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(60%) grayscale(60%);
+    width: 600px;
+    margin: 10px 20px;
+    border-radius: 20px;
 }
 
 
